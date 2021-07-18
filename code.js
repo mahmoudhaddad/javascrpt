@@ -16,6 +16,147 @@ function sumNumbers(num1, num2){
 
 sumNumbers(10, 5);
 
+//string methods
+
+const string = 'hello';
+
+console.log(string.length)
+
+console.log('hello\fworld')
+
+console.log(string.indexOf('ll'))
+
+console.log(string.replace('ello','i'))
+
+console.log(string.toUpperCase())
+
+console.log(string.toLowerCase())
+
+console.log(string.charAt(0))
+
+console.log(string[0])
+
+console.log(string.split(''))
+
+console.log(string.split('l'))
+
+//Arrays
+
+const animals = ['dog', 'cat', 'horse', 'wolf']
+
+fruits = new Array('banana', 'apple', 'pear', 'orange')
+
+console.log(typeof(animals))
+
+console.log(typeof(fruits))
+
+console.log(fruits)
+
+console.log(animals)
+
+console.log(animals[2])
+
+fruits[1] = 'pineapples'
+
+console.log(fruits[1])
+
+for(let i = 0; i < animals.length; i++){
+    console.log(animals[i])
+}
+
+//array common methods
+
+console.log('toString ' + fruits.toString())
+
+console.log('join ' + fruits.join(' * '))
+
+console.log('push ' + fruits.push('apple'), fruits) //appends item in the last of an array
+
+fruits[fruits.length] = 'new fruit' //appends item in the last of an array
+console.log(fruits)
+
+console.log('pop ' + fruits.pop(), fruits) //removes last item from an array
+
+console.log('unshift ' + fruits.unshift('Strawberries') , fruits) //appends item in the first of an array
+
+console.log('shift ' + fruits.shift() , fruits) //removes first item from an array
+
+const fruitsAndAnimals = fruits.concat(animals) //concatenate array with another array
+console.log('concat ' + fruitsAndAnimals)
+
+console.log('reverse ' + fruitsAndAnimals.reverse()) //reveres an array
+
+const numbers = new Array()
+
+for(let num = 0; num <= 10; num++){
+    numbers.push(num)
+}
+
+console.log(numbers)
+
+console.log('sort ' + numbers.sort(function(a,b){return a - b})) // sorts an array in ascending order
+
+console.log('sort ' + fruits.sort(function(a,b){return a - b})) // sorts an array in ascending order
+
+console.log('reverse sort ' + numbers.sort(function(a,b){return b - a})) //sorts an array in descending order (dosen't work with strings array)
+
+//Objects
+
+let me = {
+    firstName : 'Mahmoud',
+    lastName : 'AL-Haddad',
+    age : 17,
+    myInfo : function(){
+        return me.firstName + ' ' + me.lastName + '\n' + me.age
+    }
+}
+
+console.log(me.firstName , me.lastName , me['age'])
+
+me.age = 16.3 //Change value
+
+console.log(me.firstName , me.lastName , me['age']) 
+
+me.age++ //Change numbers value
+
+console.log(me.firstName , me.lastName , me['age'])
+
+console.log(me.myInfo())
+
+// if else
+
+var age = prompt('How old are you?')
+
+if ( (age >= 18) && (age <= 32) ){
+
+    console.log('You are welcome')
+
+} else {
+
+    console.log('this not your place')
+}
+
+//switch statment
+
+
+let sat = 1,
+    sun = 2,
+    mon = 3,
+    tues = 4,
+    wedn = 5,
+    thirs = 6,
+    friday = 7;
+
+    switch(sun){
+        case 6, 7:
+            console.log('weekend')
+            break;
+        default :
+            console.log('weekday')               
+            
+    }
+*/
+
 //Challenge 1: Your age in days
 
 function ageInDays(){
